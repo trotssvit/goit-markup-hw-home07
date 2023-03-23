@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: white;
+}
+/* --------------------Header navigation-------------------------- */
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #4d5ae5;
+  width: 71px;
+  height: 21px;
+}
+.logo > span {
+  width: 71px;
+  color: #2e2f42;
+}
+.site-nav {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.contacts {
+  text-decoration: none;
+}
+/*---------------------Footer------------------------------------------------*/
+.footer-logo > span {
+  color: #f4f4fd;
+}
