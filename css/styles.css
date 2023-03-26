@@ -265,7 +265,11 @@ body {
   margin-top: 16px;
 }
 /*---------------------------------------Portfolio---------------------------------------------*/
-
+.portfolio_btns {
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+}
 .portfolio-btn {
   border: 0px;
   background: #404bbf;
