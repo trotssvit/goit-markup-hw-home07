@@ -107,10 +107,19 @@ body {
   margin-left: auto;
 }
 .hero {
-  background-color: var(--hero-bgcolor);
+  background: var(--hero-bgcolor);
   height: 600px;
   width: auto;
   text-align: center;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-opt.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-text {
   font-weight: 700;
@@ -151,6 +160,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark-text);
   margin-bottom: 8px;
+}
+.goals-icon {
+}
+.goals-pic {
+  display: flex;
+  margin-bottom: 8px;
+  height: 112px;
+  width: 100%;
+  background: #f4f4fd;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 .goals-content {
   font-weight: 400;
