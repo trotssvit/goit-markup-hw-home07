@@ -7,6 +7,8 @@
   --hover-btn: #404bbf;
   --logo-footer: #f4f4fd;
   --border-work-item: #e7e9fc;
+  --icons-customers: #8e8f99;
+  --icons-hover-footer: #31D0AA;
 }
 p,
 h1,
@@ -161,8 +163,7 @@ body {
   color: var(--dark-text);
   margin-bottom: 8px;
 }
-.goals-icon {
-}
+
 .goals-pic {
   display: flex;
   margin-bottom: 8px;
@@ -224,6 +225,9 @@ body {
 .team-item + .team-item {
   margin-left: 24px;
 }
+.team-net-links{
+    padding-bottom: 32px;
+}
 .team-text {
   font-weight: 700;
   font-size: 36px;
@@ -258,8 +262,109 @@ body {
   letter-spacing: 0.02em;
   color: var(--normal-text);
 
-  padding-bottom: 32px;
+  padding-bottom: 8px;
 }
+
+.team-net {
+    fill: var(--logo-footer);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .team-net-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .team-links {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    background-color: var(--primary-brand);
+    justify-content: center;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .team-links:hover,
+  .team-links:focus {
+    background-color: var(--hover-btn);
+  }
+  
+  .team-link-items:hover .team-net,
+  .team-link-items:focus .team-net {
+    fill: var(--logo-footer);
+  }
+  
+  .team-link-items + .team-link-items {
+    margin-left: 10px;
+  }
+
+/*-------------------------------------------------Customers---------------------------------*/
+.customers-net {
+  width: 104px;
+  height: 56px;
+  fill: var(--icons-customers);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  margin-bottom: 72px;
+  padding-top: 120px;
+
+  color: var(--dark-text);
+}
+.customers-a {
+  display: flex;
+  padding: 0px 0px;
+  background: var(--main-bg-color);
+  border: 1px solid var(--icons-customers);
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 168px;
+  height: 88px;
+
+  justify-content: center;
+  align-items: center;
+}
+.customer-list {
+    display: flex;
+    padding: 16px, 32px, 16px, 32px;
+  
+    margin-bottom: 120px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .customers-list {
+    max-width: 168px;
+    max-height: 88px;
+  }
+.customers-a:hover {
+    border-color: var(--hover-btn);
+    cursor: pointer;
+  }
+  .customers-a:hover .customers-net {
+    fill: var(--hover-btn);
+  }
+  
+  .customers-a:focus {
+    border-color: var(--hover-btn);
+  }
+  
+  .customers-a:focus .customers-net {
+    border-color: var(--hover-btn);
+    fill: var(--hover-btn);
+  }
+
 /*---------------------Footer------------------------------------------------*/
 .footer-space {
   background-color: #2e2f42;
@@ -285,6 +390,63 @@ body {
 .footer-text {
   margin-top: 16px;
 }
+/*------------------------------------------Footer social media-----------------------------------*/
+.footer-link-word {
+    color: var(--main-bg-color);
+  
+    text-transform: uppercase;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  
+    margin-bottom: 16px;
+  }
+  .footer-space .container {
+    display: flex;
+  }
+  .footer-soc-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+  
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-net {
+    fill: #ffffff;
+  }
+  
+  .footer-link-item + .footer-link-item {
+    margin-left: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+  }
+  .networks-footer {
+    display: inline-block;
+    align-items: baseline;
+   
+    position: inherit;
+    margin-top: 100px;
+    margin-left: 120px;
+  }
+  .footer-content {
+    float: left;
+    align-items: baseline;
+  }
+  
+  .footer-soc-link:hover,
+  .footer-soc-link:focus {
+    background-color: var(--icons-hover-footer);
+  }
+
 /*---------------------------------------Portfolio---------------------------------------------*/
 .header {
   border-bottom: 1px solid var(--border-work-item);
