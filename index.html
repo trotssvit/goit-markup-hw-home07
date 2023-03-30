@@ -13,6 +13,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <header>
     <div class="container header-nav">
@@ -38,7 +39,7 @@
         <div class="hero-content">
             <h1 class="hero-text">Effective Solutions for Your Business</h1>
 
-            <button type="button" class="hero-btn">Order Service</button>
+            <button data-modal-open type="button" class="hero-btn">Order Service</button>
         </div>
 
     </section>
@@ -327,11 +328,53 @@
         </div>
     </section>
     <!------------------------------------------Modal wondow-------------------------------------------->
-    <div class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
         <div class="modal">
 
+            <form>
+                <button class="modal-close-bt" data-modal-close type="button">
+                    <svg class="" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <h3 class="modal-header">Leave your contacts and we will call you back</h3>
+                <div class="modal-fields">
+                    <div class="modal-field">
+                        <label class="modal-label" for="name">Name</label>
+                        <div class="modal-input-wrap">
+                            <input class="modal-input" type="name" name="name" required />
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-label" for="tel">Телефон </label>
+                        <div class="modal-input-wrap">
+                            <input class="modal-input" type="tel" name="tel" id="tel" placeholder=" " required />
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-label" for="email">Почта </label>
+                        <div class="modal-input-wrap">
+                            <input class="modal-input" type="email" name="mail" id="mail" placeholder=" " />
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-label" for="coment">Комментарий </label>
+
+                        <textarea class="modal-input-text" name="coment" id="coment" placeholder="Введите текст"
+                            required></textarea>
+                    </div>
+
+                </div>
         </div>
-    </div>
 </main>
 
 <footer class="">
