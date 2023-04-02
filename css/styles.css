@@ -759,7 +759,7 @@ body {
   border-radius: 2px;
 }
 .checkbox:checked + .new-checkbox {
-  background-image: url(../images/symbol-defs.svg#icon-plane);
+  background-image: url(../images/vector.svg);
 }
 /*---------------------------------------Portfolio---------------------------------------------*/
 .header {
@@ -883,7 +883,7 @@ body {
   transform: translate(0, 100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-/* transition: transform 500ms linear; */
+  /* transition: transform 500ms linear; */
 }
 .profile-card {
   display: block;
@@ -893,6 +893,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-.item:hover .overlay{
-    transform: translate(0, 0);
-   }
+.item:hover .overlay {
+  transform: translate(0, 0);
+}
